@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		97E57DD02CFF7BB90070D238 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 97E57DCF2CFF7BB90070D238 /* FirebaseAuth */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		97E57DB02CFF79110070D238 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97E57DD02CFF7BB90070D238 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = MDA2024;
 			packageProductDependencies = (
+				97E57DCF2CFF7BB90070D238 /* FirebaseAuth */,
 			);
 			productName = MDA2024;
 			productReference = 97E57D9E2CFF79100070D238 /* MDA2024.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 97E57D952CFF79100070D238;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				97E57DCE2CFF7BB90070D238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 97E57D9F2CFF79100070D238 /* Products */;
 			projectDirPath = "";
@@ -591,6 +600,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		97E57DCE2CFF7BB90070D238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		97E57DCF2CFF7BB90070D238 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 97E57DCE2CFF7BB90070D238 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 97E57D962CFF79100070D238 /* Project object */;
 }

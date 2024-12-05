@@ -11,7 +11,8 @@ import SwiftUI
 struct MDA2024App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView(action: {})
+            //LoginView()
         }
     }
 }
